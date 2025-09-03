@@ -50,12 +50,6 @@ It features smooth animations, interactive destination cards, booking modal, and
 
 ---
 
-## 📸 Preview
-
-*(Add a screenshot of your landing page here if you want)*
-
----
-
 ## 📧 Contact
 
 For queries or suggestions: **[support@travelgo.com](mailto:support@travelgo.com)**
