@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TravelGo — Explore the World</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">✈️ TravelGo</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Discover the World with TravelGo</h1>
+      <p class="tagline">Handpicked trips • Local experts • Memorable experiences 🌍</p>
+      <a class="btn" href="#destinations">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- SEARCH -->
+  <section class="section search-section">
+    <h2>🔎 Search Destinations</h2>
+    <input id="searchInput" type="text" placeholder="Type a destination (e.g. Bali, Goa)..." />
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="section">
+    <h2>Top Destinations</h2>
+    <div class="cards">
+
+      <!-- Maldives -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://www.sunsiyam.com/media/qnfnzgmq/ssiv_general_04.jpg?width=782&height=521&mode=max" alt="Maldives">
+          <span class="price-badge">From ₹55,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Maldives 🏝️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏖️ Hulhumalé Beach</li>
+            <li>🏝️ Maafushi Island</li>
+            <li>🤿 Banana Reef (Snorkeling)</li>
+            <li>🏨 Underwater Villas</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Maldives">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gokarna -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://templeinkarnataka.com/wp-content/uploads/2024/08/Mahabaleshwara-Temple1.png" alt="Gokarna">
+          <span class="price-badge">From ₹6,500</span>
+        </div>
+        <div class="card-body">
+          <h3>Gokarna 🌅</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏖️ Om Beach</li>
+            <li>🌴 Kudle Beach</li>
+            <li>🏰 Mirjan Fort</li>
+            <li>🛕 Mahabaleshwar Temple</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Gokarna">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kerala -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/15/ed4e5844df8201e480059b18e40f5947_1000x1000.jpg" alt="Kerala">
+          <span class="price-badge">From ₹12,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Kerala 🌿</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🛶 Alleppey Backwaters</li>
+            <li>🌳 Munnar Tea Gardens</li>
+            <li>🐘 Thekkady Wildlife</li>
+            <li>🏖️ Kovalam Beach</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Kerala">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Switzerland -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://i0.wp.com/blog.lowcostvibes.com/wp-content/uploads/2023/03/interlaken-1024x580.jpg?resize=1024,580&ssl=1" alt="Switzerland">
+          <span class="price-badge">From ₹1,80,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Switzerland 🏔️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🚠 Mt. Titlis</li>
+            <li>🚂 Glacier Express</li>
+            <li>🏞️ Interlaken</li>
+            <li>🏙️ Zurich Old Town</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Switzerland">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dwarka -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://utsav.gov.in/public/uploads/darshan_picture/darshan_4/1649075905366239894.jpg" alt="Dwarka">
+          <span class="price-badge">From ₹18,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Dwarka 🛕</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🛕 Dwarkadhish Temple</li>
+            <li>🐠 Marine National Park (Gulf of Kutch)</li>
+            <li>🐢 Nageshwar Jyotirlinga Templ</li>
+            <li>🐬 Okha Madhi Beach</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Dwarka">Book Now</button>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Manali -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://www.indiadrivertours.com/wp-content/uploads/2017/06/tpkg-manalitour.jpg" alt="Manali">
+          <span class="price-badge">From ₹9,500</span>
+        </div>
+        <div class="card-body">
+          <h3>Manali ⛰️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏔️ Solang Valley</li>
+            <li>🌲 Rohtang Pass</li>
+            <li>🕉️ Hadimba Temple</li>
+            <li>🏞️ Beas River</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Manali">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://clubmahindra.gumlet.io/blog/media/section_images/shuttersto-6d71496a31ac52b.jpg?w=376&dpr=2.6" alt="Goa">
+          <span class="price-badge">From ₹8,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Goa 🍹</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏖️ Baga Beach</li>
+            <li>🎶 Tito’s Club</li>
+            <li>🏰 Fort Aguada</li>
+            <li>🏖️ Anjuna Beach</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Goa">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bali -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://etimg.etb2bimg.com/photo/115997634.cms" alt="Bali">
+          <span class="price-badge">From ₹45,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Bali 🌺</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🕌 Uluwatu Temple</li>
+            <li>🌊 Tanah Lot</li>
+            <li>🌾 Ubud Rice Terraces</li>
+            <li>🏖️ Seminyak Beach</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Bali">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dubai -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/56000/56828-Dubai.jpg" alt="Dubai">
+          <span class="price-badge">From ₹50,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Dubai 🏙️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏢 Burj Khalifa</li>
+            <li>🏝️ Palm Jumeirah</li>
+            <li>🛍️ Dubai Mall</li>
+            <li>🏜️ Desert Safari</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Dubai">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kedarnath -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg" alt="Kedarnath">
+          <span class="price-badge">From ₹17,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Kedarnath 🕉️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🕉️ Kedarnath Temple</li>
+            <li>❄️ Chorabari (Gandhi) Sarovar</li>
+            <li>🌲 Vasuki Tal</li>
+            <li>🚶 Gaurikund</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Kedarnath">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vizag -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://sunrayvillageresort.com/blog/admin/assets/img/post/image_2023-06-21-10-45-13_6492d4b9994cb.png" alt="Vizag">
+          <span class="price-badge">From ₹5,500</span>
+        </div>
+        <div class="card-body">
+          <h3>Vizag 🌊</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏖️ RK Beach</li>
+            <li>🌄 Kailasagiri Hilltop</li>
+            <li>🪖 Submarine Museum</li>
+            <li>🌳 Araku Valley</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Vizag">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pondicherry -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://www.alphonsostories.com/AlphonSoStoriesImages/BlogImage/Pondicherry--The-Yellow-City-lg-cov.jpg" alt="Pondicherry">
+          <span class="price-badge">From ₹5,500</span>
+          <span class="price-badge">From ₹10,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Pondicherry 🏖️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🏖️ Promenade Beach</li>
+            <li>🏛️ Pondicherry Museum</li>
+            <li>🪷 Auroville</li>
+            <li>🕍 Sacred Heart Basilica</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Pondicherry">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ooty -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://www.trawell.in/blog/wp-content/uploads/2024/03/ooty-main.jpg" alt="Ooty">
+          <span class="price-badge">From ₹9,500</span>
+        </div>
+        <div class="card-body">
+          <h3>Ooty 🌄</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🌼 Botanical Garden</li>
+            <li>🚞 Nilgiri Mountain Railway</li>
+            <li>🛶 Ooty Lake</li>
+            <li>🫖 Tea Museum & Factory</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Ooty">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paris -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/08/6b/bf/2f.jpg" alt="Paris">
+          <span class="price-badge">From ₹1,50,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Paris 🌆</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🗼 Eiffel Tower</li>
+            <li>🎨 Louvre Museum</li>
+            <li>🌉 Seine River Cruise</li>
+            <li>🎭 Moulin Rouge</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Paris">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jammu & Kashmir -->
+      <div class="card fade-in destination">
+        <div class="card-media">
+          <img src="https://www.peakadventuretour.com/assets/imgs/kashmir-tourism-01.webp" alt="Jammu & Kashmir">
+          <span class="price-badge">From ₹30,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Jammu & Kashmir ❄️</h3>
+          <button class="toggle-btn">Explore</button>
+          <ul class="places-list">
+            <li>🛶 Dal Lake</li>
+            <li>🏔️ Gulmarg</li>
+            <li>🏞️ Pahalgam</li>
+            <li>🌸 Mughal Gardens</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Jammu & Kashmir">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card fade-in">
+        <div class="card-media"><img src="https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=" alt="Flights"></div>
+        <div class="card-body">
+          <h3>Flight Booking ✈️</h3>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🌐 Domestic & International</li>
+            <li>💺 Seat Selection & Insurance</li>
+            <li>⏰ 24/7 Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-media"><img src="https://www.letsdiskuss.com/_next/image?url=https://api.letsdiskuss.com/resources/static/asset/uploads/1711970505375-hotel.jpg&w=1920&q=75" alt="Hotels"></div>
+        <div class="card-body">
+          <h3>Hotel Reservations 🏨</h3>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>⭐ Luxury & Budget Stays</li>
+            <li>🏝️ Resorts & Villas</li>
+            <li>👨‍👩‍👧 Family & Honeymoon deals</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-media"><img src="https://supersportcarrental.com/wp-content/uploads/2023/12/RENT-BMW-M4-COMPETITION-IN-DUBAI--1048x1047.jpg" alt="Car Rentals"></div>
+        <div class="card-body">
+          <h3>Car Rentals 🚗</h3>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🚘 Economy to Luxury</li>
+            <li>🚖 Airport pickup & drop</li>
+            <li>🧾 Short & Long term options</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-media"><img src="https://img.travelnaut.com/web/db/photose/location/as/lk/all_of_sri_lanka/a26b82aa544ebc3628aab06ab914585f.jpeg?format=webp&width=3840&quality=75" alt="Guided Tours"></div>
+        <div class="card-body">
+          <h3>Guided Tours 🗺️</h3>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🏙️ City Sightseeing</li>
+            <li>⚡ Adventure Sports</li>
+            <li>🎭 Local cultural experiences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES (separate grid) -->
+  <section id="packages" class="section">
+    <h2>Popular Packages</h2>
+    <div class="cards packages-grid">
+      <div class="card fade-in package">
+        <div class="card-media"><img src="https://etimg.etb2bimg.com/photo/115997634.cms" alt="Bali"></div>
+        <div class="card-body">
+          <h3>Bali 5D/4N 🌺</h3>
+          <p class="muted">From <strong>₹45,000</strong> / person</p>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🏡 Luxury villa stay</li>
+            <li>🕌 Uluwatu & Tanah Lot</li>
+            <li>🚐 Transfers</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Bali 5D/4N">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in package">
+        <div class="card-media"><img src="https://www.sunsiyam.com/media/qnfnzgmq/ssiv_general_04.jpg?width=782&height=521&mode=max" alt="Maldives"></div>
+        <div class="card-body">
+          <h3>Maldives 4D/3N 🏝️</h3>
+          <p class="muted">From <strong>₹55,000</strong> / person</p>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🏨 Overwater villa</li>
+            <li>🤿 Snorkeling</li>
+            <li>🍽️ Meals included</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Maldives 4D/3N">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in package">
+        <div class="card-media"><img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/56000/56828-Dubai.jpg" alt="Dubai"></div>
+        <div class="card-body">
+          <h3>Dubai 6D/5N 🏙️</h3>
+          <p class="muted">From <strong>₹50,000</strong> / person</p>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🏨 4★ hotel</li>
+            <li>🐪 Desert safari</li>
+            <li>🏢 Burj Khalifa entry</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Dubai 6D/5N">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in package">
+        <div class="card-media"><img src="https://www.peakadventuretour.com/assets/imgs/kashmir-tourism-01.webp" alt="Kashmir"></div>
+        <div class="card-body">
+          <h3>Kashmir 5D/4N ❄️</h3>
+          <p class="muted">From <strong>₹30,000</strong> / person</p>
+          <button class="toggle-btn">View Details</button>
+          <ul class="places-list">
+            <li>🚤 Houseboat on Dal Lake</li>
+            <li>⛰️ Gulmarg & Pahalgam</li>
+            <li>🍽️ Meals included</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn book-btn" data-destination="Kashmir 5D/4N">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="modalClose" aria-label="Close">&times;</button>
+      <h2 id="modalTitle">Book Your Trip</h2>
+      <form id="bookingForm">
+        <label>Full Name *</label>
+        <input id="bf-name" type="text" required />
+        <label>Email *</label>
+        <input id="bf-email" type="email" required />
+        <label>Phone *</label>
+        <input id="bf-phone" type="tel" required />
+        <label>Destination / Package *</label>
+        <input id="bf-destination" type="text" required readonly />
+        <label>Start Date *</label>
+        <input id="bf-start" type="date" required />
+        <label>Number of Travelers *</label>
+        <input id="bf-travellers" type="number" min="1" value="1" required />
+        <label>Special Requests</label>
+        <textarea id="bf-notes" rows="3" placeholder="Any special requests (meals, accessibility, etc.)"></textarea>
+        <button type="submit" class="btn">Send Booking Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-large">
+    <h2>About TravelGo — Your Journey, Perfected ✨</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          At <strong>TravelGo</strong>, we turn trips into stories. For over <strong>10 years</strong>, our team of travel curators,
+          local guides and logistics experts have crafted experiences that feel effortless, authentic and unforgettable.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+          To make travel joyful and worry-free — by offering carefully curated itineraries, transparent pricing,
+          and real local expertise. We focus on experiences that connect you to places, not just ‘checkpoints’.
+        </p>
+
+        <h3>What We Value</h3>
+        <ul>
+          <li>🌍 Responsible travel — we support local communities.</li>
+          <li>💡 Personalization — every trip can be customized.</li>
+          <li>⏱️ Reliability — we’re available 24/7 while you travel.</li>
+          <li>💸 Fair pricing — no hidden fees.</li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat"><strong>10+</strong><span>Years Experience</span></div>
+        <div class="stat"><strong>12,000+</strong><span>Happy Travelers</span></div>
+        <div class="stat"><strong>450+</strong><span>Handpicked Hotels</span></div>
+        <div class="stat"><strong>220+</strong><span>Trusted Guides</span></div>
+      </div>
+    </div>
+
+    <p class="lead">Let TravelGo craft your next story — one unforgettable trip at a time.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>📞 +91 98765 43210 &nbsp; • &nbsp; 📧 support@travelgo.com &nbsp; • &nbsp; 📩 travelgo@gmail.com</p>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© 2025 TravelGo. All rights reserved.</p>
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
